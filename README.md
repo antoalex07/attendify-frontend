@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+there are many differences i intend to implement in this code with respect to the others. The previous react app was a sped up one and i couldn't run through on how things worked so i fixed bugs made it run and so on. Now i intend to learn what every code block does 
+
+the nav array is mapped with route and index so instead of r and i I gave route and index it helped a lot.
