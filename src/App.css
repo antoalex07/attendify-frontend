@@ -1,3 +1,58 @@
 .App {
   text-align: center;
 }
+
+/* Header */
+
+
+/* Home Page */
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.home .primary-text {
+  margin-top: 10px;
+  width: 500px;
+} 
+
+.banner-image {
+  background-image: url("./assets/office.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.home h1 {
+  font-size: clamp(2rem, 3vw, 4rem);
+  color: #4c4c4c;
+  max-width: 800px;
+  text-align: center;
+}
+
+.section-divider {
+  border: none;
+  border-top: 2px solid #4c4c4c;
+  position: relative;
+  width: 40vw;
+}
+
+.home p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  max-width: 800px;
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+  text-align: center;
+}
+
+
