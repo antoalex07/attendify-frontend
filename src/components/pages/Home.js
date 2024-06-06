@@ -9,7 +9,7 @@ const Home = () => {
   const { user } = AuthData();
 
   const handleButtonClick = () => {
-    navigate("/signUp");
+    navigate("/details");
   }
 
   return (
@@ -27,8 +27,8 @@ const Home = () => {
                           width: "500px", 
                           fontFamily: "Lato, sans seriff"}}
                     variant='contained'
-                    onClick>
-          Sign Up</Button>    
+                    onClick={handleButtonClick}>
+          Know More</Button>    
         ):(
           <>
           </>
