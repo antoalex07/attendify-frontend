@@ -4,6 +4,19 @@
 
 /* Header */
 
+.header {
+  align-content: start;
+}
+
+.logo {
+  background-image: url("./assets/attendify.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 10em;
+  height: 5em;
+  margin-left: 1em;
+}
 
 /* Home Page */
 
