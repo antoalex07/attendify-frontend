@@ -18,6 +18,30 @@
   margin-left: 1em;
 }
 
+/* Menu */
+
+.menu {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+}
+
+.menu a{
+  padding: 10px;
+}
+
+.menu .menu-item a{
+  color: #000;
+  font-family: "Reem Kufi", sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Home Page */
 
 .home {
