@@ -1,6 +1,7 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useNavigate } from "react-router-dom";
 import { AuthData } from "../../auth/AuthWrapper"
 import nav from "./Navigation";
+import { Button } from "@mui/material";
 
 export const RenderRoutes = () => {
     
@@ -24,6 +25,12 @@ export const RenderRoutes = () => {
 export const RenderMenu = () => {
 
     const { user, logout } = AuthData();
+    const navigate = useNavigate();
+
+    const handleLogOutButtonClick = () => {
+        logout();
+        navigate("/");
+    }
 
     const MenuItem = ({route}) => {
         return (
@@ -48,11 +55,12 @@ export const RenderMenu = () => {
             })}
             { user.isAuthenticated ? (
                 <div className="menu-item">
-                    <Link to={"/"} onClick={logout}>Log out</Link>
+                    <Button onClick={handleLogOutButtonClick}>Log out</Button>
                 </div>
             ) : (
                 <div className="menu-item">
-                    <Link to={"/login"}>Log in</Link>
+                    <Button onClick={navigate("/login")}>Log In</Button>
+                    <Button onClick={navigate("/signup")}>Sign Up</Button>
                 </div>
             )}
         </div>
